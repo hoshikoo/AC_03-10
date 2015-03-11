@@ -14,7 +14,7 @@ public class countingData {
         char data3 = text.charAt(3);
         int count=0;
 
-        for (int i = 0; i < GraceHopperQuote.length(); i = i+1){
+        for (int i = 0; i < GraceHopperQuote.length() - text.length(); i = i+1){ //-text.length() is deleting the unnecessary count at the end.  ex end end+1 end+2 end +3.
             if(GraceHopperQuote.charAt(i)==data0){
                 if(GraceHopperQuote.charAt(i+1)==data1){
                     if(GraceHopperQuote.charAt(i+2)==data2){
